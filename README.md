@@ -9,6 +9,15 @@ For examples of the use of the IQD, see the example below or
 
 Q Yuan, T L Thorarinsdottir, S Beldring, W K Wong, S Huang and C-Y Xu (2019):  New approach for bias correction and stochastic downscaling of future projections for daily mean temperatures to a high-resolution grid. Journal of Applied Meteorology and Climatology, 58: 2617-2632.
 
+Three functions for calculating the IQD between two empirical distribution functions (ECDFs) are available: 
+
+* **IQD_crps(X,Y)** uses the sample version of the continuous rankes probability score (CRPS), as implemented in the R package scoringRules, where **X** and **Y** are vectors of values corresponding to the two ECDFs. 
+
+* **IQD_integrate(X,Y)** uses direct numerical integration of the IQD formula, where **X** and **Y** are vectors corresponding to the two ECDFs.
+
+* **wIQD_integrate(X,Y,wFct)** uses direct numerical integration of the IQD formula to calculate a weighted version of the IQD for the weight function **wFct**, where **X** and **Y** are vectors corresponding to the two ECDFs (see Yuan et al. (2019) for examples of weight functions).
+
+The following are needed to use these functions: 
 
 
 ```r
@@ -16,13 +25,6 @@ library(scoringRules)
 source("IQDfunctions.R")
 ```
 
-Three functions for calculating the IQD between two empirical distribution functions (ECDFs) are available: 
-
-* **IQD_crps(X,Y)** uses the sample version of the continuous rankes probability score (CRPS), as implemented in the R package scoringRules, where **X** and **Y** are vectors of values corresponding to the two ECDFs. 
-
-* **IQD_integrate(X,Y)** uses direct numerical integration of the IQD formula, where **X** and **Y** are vectors corresponding to the two ECDFs.
-
-* **wIQD_integrate(X,Y,wFct)** uses direct numerical integration of the IQD formula to calculate a weighted version of the IQD for the weight function **wFct**, where **X** and **Y** are vectors corresponding to the two ECDFS (see Yuan et al. (2019) for examples of weight functions).
 
 ### Example of the use of the IQD 
 
