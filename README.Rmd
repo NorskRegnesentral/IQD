@@ -10,8 +10,7 @@ For examples of the use of the IQD, see the example below or
 Q Yuan, T L Thorarinsdottir, S Beldring, W K Wong, S Huang and C-Y Xu (2019):  New approach for bias correction and stochastic downscaling of future projections for daily mean temperatures to a high-resolution grid. Journal of Applied Meteorology and Climatology, 58: 2617-2632.
 
 
-
-```r
+```{r message=FALSE}
 library(scoringRules)
 source("IQDfunctions.R")
 ```
@@ -28,8 +27,7 @@ Three functions for calculating the IQD between two empirical distribution funct
 
 Example 1:
 
-
-```r
+```{r}
 set.seed(17)
 z <- seq(from=-6, to=7, by=0.001)
 x1  <- rnorm(81, mean=0, sd=2)
@@ -53,24 +51,15 @@ lines(	z, y2(z), col=cols[2], lwd=2 )
 lines(	z, y1(z), col=cols[1], lwd=2 )
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
-
 Calculate the IQD 
 
-
-```r
+```{r}
 PrintIQD(x1,x2) 
-```
-
-```
-## [1] "IQD_crps      = 0.13072064"
-## [1] "IQD_integrate = 0.13069875"
 ```
 
 Example 2: 
 
-
-```r
+```{r}
 x3  <- rnorm(81, mean=0, sd=1)
 y2 <- ecdf(x3)
 plot( z,
@@ -91,15 +80,7 @@ lines(  z, y2(z), col=cols[2], lwd=2 )
 lines(  z, y1(z), col=cols[1], lwd=2 )
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
 
-
-
-```r
+```{r}
 PrintIQD(x1,x3) 
-```
-
-```
-## [1] "IQD_crps      = 0.09622251"
-## [1] "IQD_integrate = 0.09621762"
 ```
