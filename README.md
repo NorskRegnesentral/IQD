@@ -11,7 +11,7 @@ Q Yuan, T L Thorarinsdottir, S Beldring, W K Wong, S Huang and C-Y Xu (2019):  N
 
 Three functions for calculating the IQD between two empirical distribution functions (ECDFs) are available: 
 
-* **IQD_crps(X,Y)** uses the sample version of the continuous rankes probability score (CRPS), as implemented in the R package scoringRules, where **X** and **Y** are vectors of values corresponding to the two ECDFs. 
+* **IQD_crps(X,Y)** uses the sample version of the continuous ranked probability score (CRPS), as implemented in the R package scoringRules, where **X** and **Y** are vectors of values corresponding to the two ECDFs. 
 
 * **IQD_integrate(X,Y)** uses direct numerical integration of the IQD formula, where **X** and **Y** are vectors corresponding to the two ECDFs.
 
