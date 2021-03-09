@@ -3,6 +3,8 @@
 
 The integrated quadratic distance (IQD) measures the similarity between two distributions by the integral over the squared difference between the two distribution functions. For background information on the IQD and its properties, see
 
+T L Thorarinsdottir, J Sillmann, M Haugen, N Gissibl and M Sandstad (2020): Evaluation of CMIP5 and CMIP6 simulations of historical surface air temperature extremes using proper evaluation methods. Environmental Research Letters, 15: 124041.
+
 T L Thorarinsdottir, T Gneiting and N Gissibl (2013): Using proper divergence functions to evaluate climate models. SIAM/ASA Journal on Uncertainty Quantification, 1(1): 522-534.
 
 For examples of the use of the IQD, see the example below or 
