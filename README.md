@@ -104,6 +104,7 @@ PrintIQD(x1,x3)
 ```
 
 
+### Acknowledgements
 
 Parts of this work were funded by the Research Council of Norway through grants nr. 243953 "Physical and statistical analysis of climate extremes in large datasets" and 255517 "Post-processing Climate Projection Output for Key Users in Norway", and the European Union, Horizon 2020 through grant nr. 820655 "EXHAUSTION". 
 ```
