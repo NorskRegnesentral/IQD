@@ -103,6 +103,7 @@ lines(  z, y1(z), col=cols[1], lwd=2 )
 PrintIQD(x1,x3) 
 ```
 
+Parts of this work were funded by the Research Council of Norway through grants nr. 243953 "Physical and statistical analysis of climate extremes in large datasets" and 255517 "Post-processing Climate Projection Output for Key Users in Norway", and the European Union, Horizon 2020 through grant nr. 820655 "EXHAUSTION". 
 ```
 ## [1] "IQD_crps      = 0.09622251"
 ## [1] "IQD_integrate = 0.09621762"
